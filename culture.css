@@ -1,0 +1,288 @@
+body{
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    background-color: #000;
+}
+
+
+.main-nav {
+    margin-top: 14px; 
+    text-align: right;
+    margin-right:12px; 
+  }
+  
+  .main-nav li {
+      display: inline;
+  }
+  
+  .main-nav a {
+      text-decoration: none;
+      font-weight: bolder;
+      font-size: 22px;
+      letter-spacing: 4px;
+      color: white;
+      margin-right: 56px;
+  }
+
+.main-nav a {
+    position: relative;
+  }
+  
+  .main-nav a:hover {
+    text-decoration: none; 
+  }
+  
+  .main-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: red;
+    transform: scaleX(0);
+    transition: transform 0.3s ease; 
+  }
+  
+  .main-nav a:hover::after {
+    transform: scaleX(1);
+  }
+  
+  
+
+.page-heading{
+    width: 100%;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Poppins', poppins;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.paleo{
+    width: 30%;
+    flex: 0 0 30%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.paleo-text{
+    color: #fff;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    margin: 4%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.paleo-text h2{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.paleo-text h4{
+    text-transform: none;
+    text-align: justify;
+}
+
+.paleo img {
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+
+.basler{
+    width: 30%;
+    flex: 0 0 30%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.basler-text{
+    color: #fff;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    margin: 4%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.basler-text h2{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.basler-text h4{
+    text-transform: none;
+    text-align: justify;
+}
+
+.basler img {
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+.sech{
+    width: 30%;
+    flex: 0 0 30%;
+    margin: 0;
+    overflow: hidden;
+    position: relative;
+}
+
+.sech-text{
+    color: #fff;
+    position: absolute;
+    top: 350px;
+    left: 20px;
+    margin: 4%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.sech-text h2{
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.sech-text h4{
+    text-transform: none;
+}
+
+.sech img {
+    margin: 0%;
+    width: 100%;
+    height: auto;
+    border-radius: 0px;
+    z-index: 1;
+}
+
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    .main-nav { 
+        margin-left: 300px;
+        text-align: right;
+        margin-right: 22px; 
+        justify-content: flex-end;
+      }
+
+
+      .main-nav li {
+          display: block;
+          text-align: right;
+      }
+      
+      .main-nav a {
+          text-decoration: none;
+          font-weight: bolder;
+          font-size: 22px;
+          letter-spacing: 4px;
+          color: white;
+          margin-right: 0;
+          display: block;
+          padding: 10px;
+          position: relative;
+      }
+
+      .main-nav a:hover {
+        text-decoration: none; 
+      }
+      
+      .main-nav a::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 2px; 
+        background-color: red;
+        transform: scaleX(0);
+        transition: transform 0.3s ease; 
+      }
+      
+      .main-nav a:hover::after {
+        transform: scaleX(1);
+      }
+      
+      
+    .page-heading {
+        font-size: 30px; 
+    }
+
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .paleo,
+    .basler,
+    .sech {
+        width: 100%;
+        flex: 0 0 100%;
+        margin-bottom: 20px; 
+    }
+
+
+    .paleo-text,
+    .basler-text,
+    .sech-text {
+        top: 400px;
+        left: 20px;
+        margin: 0;
+        text-align: bottom;
+    }
+
+
+    .paleo-text h2,
+    .basler-text h2,
+    .sech-text h2 {
+        text-align: left;
+    }
+
+
+    .paleo img,
+    .basler img,
+    .sech img {
+        border-radius: 0; 
+    }
+}
